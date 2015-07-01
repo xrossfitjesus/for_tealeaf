@@ -1,0 +1,20 @@
+#excer 1
+p "richard" + " casti"
+
+#excer 2
+p  %q@ thou = 5000 / 12345 
+   hundred = 4936 % 1000 / 100 
+   tens = 4936 % 1000 % 100 / 10 
+   ones = 4936 % 1000 %100 % 10 @
+# 3   
+movies = { madmax: 2015, batman: 2012, avanger: 2013 }
+p movies.values
+
+# 4
+p movies.values.to_a
+
+# 6
+
+p  3.5**3 , 2.5**2  , 5.3**5
+
+# 7 expecting ) should be closed with } might be a hash that needs to be closed.
