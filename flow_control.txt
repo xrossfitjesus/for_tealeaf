@@ -1,0 +1,63 @@
+#1 Flow control excercises
+#1.true , false, false, true, true
+
+#2 if the string is == 10 .upcase
+
+#f make_up(string)
+#  if string.length > 10
+#  puts string.upcase
+#  else
+#  puts 'no cookie'
+# end
+#end
+
+#make_up('batman beat superman!!')
+
+#3 gets number.chomp gives back 0-50 range, 50-100 range or above.
+
+#p "give number"
+#x = gets.chomp.to_i
+
+#if x <= 50
+#  puts "number is below 50"
+#  elsif x <= 100
+#  puts "number is higher and less than 100"
+#  else
+#  puts "number is over 9000"
+#end
+
+#4 what will it print to the screen? 1. false, 2. Did you get it right 3.
+
+#5 wrap with case statement. 3 methods.
+
+#def new_s(i)
+#case i
+#  when 0..50
+#    puts "below 50"
+#  when 50..100
+#    puts "number lower 100"
+#  else
+#    puts "iam batman that's cray"
+#  end
+#end
+
+#def new_state(n)
+#case 
+#when n <= 50
+#  puts " your number is lower than 50"
+#when n <= 100
+#  puts " your number is lower than 100"
+#else 
+#  puts "you are over 9000!!"
+#  end
+#end
+
+#new_state(5)
+#new_state(55)
+#new_state(102)
+
+#new_s(535)
+#new_s(3)
+#new_s(67)
+
+# question 6,  close the statement with the end.

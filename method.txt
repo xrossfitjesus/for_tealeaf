@@ -1,0 +1,19 @@
+#Methods question 1
+
+#def greeting(name)
+#  puts "hello #{name}, nice to meet you!"
+#end
+#p greeting('richard')
+
+#2 1. assigning a variable,2.error, 3.joe, 4.assign var four to srting, 5. error
+
+#3 Multiply method
+
+def multiply(x,y)
+  return x * y
+end
+p multiply(5,3)
+
+#4 & 5 it will not print anything, since it will return the last expression and wouldnt go through print.
+
+#6 missing a parameter in calculate product.
