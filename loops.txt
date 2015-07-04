@@ -1,0 +1,30 @@
+#1 returns the same value.
+
+#2 create a while loop that ask input to the user until press stop
+
+#loop do
+#  puts "still looping want me to repeat?"
+#  answer = gets.chomp
+#  if answer == "STOP"
+#  break
+#  end
+#end
+
+#3 normal each_with_index print 
+
+#arr = [1,2,3,4,5]
+#arr.each_with_index {|x,y| print x,y}
+
+
+#4 count down to zero using recursion ( using if s then calling the method inside a method with value)
+
+def minus(n)
+  p n
+  if n > 0
+  minus (n - 2)
+ end
+end
+
+
+minus(10)
+  

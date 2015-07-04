@@ -1,0 +1,49 @@
+#1. hash take bro and sis to pass a conditional statement using .select
+
+#family = {  uncles: ["bob", "joe", "steve"],
+#            sisters: ["jane", "jill", "beth"],
+#            brothers: ["frank","rob","david"],
+#            aunts: ["mary","sally","susan"]
+#          }
+          
+#new_fam = family.select { |k,v| k == :sisters || k == :brothers }
+
+#p new_fam.values.flatten
+
+#2. difference with method that has !, destructive.!!
+
+#3 write a program that iterates the key, next iterates a value, then both
+
+#ranking = { "batman" => 1, "superman" => 3, "flash" => 2}
+
+#ranking.each_key { |k| p k }
+#ranking.each_value { |v| p v }
+#ranking.each_pair { |k,v| p "the key is #{k} the value is #{v}"}
+
+#4 accessing bob in hash
+#person = {name: 'Bob', occupation: 'web developer', hobbies: 'painting'}
+#p person[:name]
+
+#5  use .include? .cover? .member?
+
+hero = { 1 => "batman", 2 => "robin", 3 => "mario"}
+
+#if hero.values.include?("mario")
+#  puts "It's a me a m-mario!!"
+#  else
+#  puts "lets go home"
+#end
+#better answer I learn, .has_value? .has_key? also available. 
+
+
+#6 ------  put out words that are jumbled. have no answer. yet will update.
+words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
+          'fowl', 'veil', 'wolf', 'diet', 'vile', 'edit', 'tide',
+          'flow', 'neon']
+p words.shuffle
+
+
+#7 first one is being used in new version of ruby, while the other is using a 
+# shovel notation, other is a symbol referencing a key
+
+#8 D or C, right answer B. shii..

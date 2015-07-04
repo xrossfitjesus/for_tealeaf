@@ -1,0 +1,65 @@
+#1 program to see if the number is on the array
+
+#array = [2,3,4,7,9,11]
+
+#if array.include? 3
+# puts " Number 3 is available!!"
+# else
+# puts " No number 3 here, Sorry!!"
+#end
+
+#2 value of array in the given sample.
+
+#first lvl = ['b,''a']
+#2nd = %w b1 b2 b3 a1 a2 a3
+#3rd = 1 b2 b3 a1 a2 a3 = arr.first.last return
+#4th = b b2 b3 a1 a2 a3 = arr.first.delete array
+
+#first lvl = %w "b"123 "a" 123
+#2nd = multinested array ["b", 1,2,3],["a",1,2,3]]
+#3rd = return first.last = ["b",1,2,3] = return 1,2,3
+#4th = delete first = 1,2,3
+#array = ["b"], ["a",1,2,3]
+
+#3 how to print string example on array
+
+#arr = [["test", "hello", "world"],["example", "mem"]]
+#print arr[1][0]
+
+#4 what does the method return
+arr = [15, 7, 18, 5, 12, 8, 5, 1]
+#arr.index(5)
+#arr.index[5]
+arr[5]
+#1. 8 wrong should be 3
+#2. 8 wrong should be error, closed parethesis
+#3. 5 
+
+# what is the value of abc in "Welcome to Tealeaf Academy!""
+#a = e
+#b = T
+#c = A
+
+#5. names = ['bob', 'joe', 'susan', 'margaret']
+#replace margaret with jody?
+#names.delete('margaret')
+#names << "jody"
+#p names
+#good answer = array(3) = name , give index number assign with a new element
+
+#iterate on an array. each , iincrementing the value +=2 using 
+#.each and assigning a variable to call ((since each is not destructive)
+
+array = [1,2,3,4,5]
+
+#array.each {|x| print x += 2}
+#print array
+
+#better solution!
+#arr = []
+#array.each do |x|
+#  arr << x += 2
+#end
+#p array
+#p arr
+
