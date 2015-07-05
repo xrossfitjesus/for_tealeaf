@@ -1,0 +1,30 @@
+
+
+#this is the first rendition using a simple string storing on a file.
+
+# syntax is = putting file on the text file create a new_instance = File.open( filename, w+)
+
+#sample = File.open("simple_file", "w+")
+#sample = File.open("simple_file", "w+")
+#sample.puts(" this will go to the sample file")
+#sample.close
+
+# writing a+ than w+ means it can hold more string
+
+#second rendition with different way of code.
+
+#File.open("simple_file", "a+") do |newline|
+#  newline << " \n this is the 2nd line appended on the shorter line \n "
+#end
+
+#to view use = File.readlines(name, arg) > puts block in the body}
+
+#Excer 2 using Dir Class to find .txt exts
+
+#finder = Dir.new(".")          #using Dir.new passing a param what to find
+#while file = finder.read do    # using while eql to finder do
+#  puts " #{file} has the .txt ext"
+#  if File.extname(finder) == ".txt"
+#  end
+#end
+

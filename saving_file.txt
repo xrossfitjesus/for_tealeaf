@@ -1,0 +1,4 @@
+my_file = File.new("simple_file", "w+")
+my_file.close
+
+#syntax> givenname = File.new( givenname "write+")
