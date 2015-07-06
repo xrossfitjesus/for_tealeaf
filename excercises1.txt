@@ -1,0 +1,76 @@
+#1 use each method to iterate to an array and print the value
+
+#array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#array.each {|x| puts x}
+
+#2 print out only  arr > 5
+#array.each {|x| puts x if x > 5}
+
+#3 use .select only if, odd not divisible by 2
+#arr = [5,6,7,8,9,10]
+#new_array = arr.select { |number| number % 2 != 0 }
+
+#4 append "11" prepend "0"
+#arr << "11"
+#arr.unshift"0"
+#puts arr
+
+#5 remove 11 and append "3"
+#arr.pop
+#print arr << 3
+
+#6 remove duplicate, .uniq
+#arr = [0,5,6,7,8,9,3]
+#p arr.uniq.inspect
+
+#7 Hash is a collection of key value pair. in any order while an
+# Array is a collection of elements indexed in order and both of them can store any kind of data
+
+#8 Hash style?
+
+#hash = Hash.new
+#hash = {}
+
+#9 getting key and value over a hash
+h = {a:1, b:2, c:3, d:4}
+#1.) p h[:b]
+
+#2.) h[:e] = 5
+
+#remove k v if v lower than 3.5
+#3.) h.delete_if {|k,v| v < 3.5}
+
+
+#10 hash value be array? can array of hashes?
+#ha_sh = {a:1, b:2, c:3}
+#p ha_sh.to_a
+
+#array = [boy,1,girl,2,male,3,female,5] -------------------
+# have to skip. -------------------------
+
+#11.) favorite Ruby - Ruby Docs, understand to use it
+
+#12.) write a program that moves in the array to the empty hash
+
+contact_data = [["joe@email.com", "123 Main st.", "555-123-4567"],
+            ["sally@email.com", "404 Not Found Dr.", "123-234-3454"]]
+contacts = {"Joe Smith" => {}, "Sally Johnson" => {}}
+
+
+x = contacts["Joe Smith"][:email] = contact_data[0][0]
+y = contacts["Joe Smith"][:street] = contact_data[0][1]
+z = contacts["Joe Smith"][:number] = contact_data[0][2]
+
+x1 = contacts["Sally Johnson"][:email] = contact_data[1][0]
+x2 = contacts["Sally Johnson"][:street] = contact_data[1][1]
+x3 = contacts["Sally Johnson"][:number] = contact_data[1][2]
+
+
+#13.) access joe email and sally phone.
+
+p x 
+p x3
+
+#14
+
+
