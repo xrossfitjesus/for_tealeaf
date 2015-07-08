@@ -1,0 +1,54 @@
+#1.) just printing it will return the original array, uniq is not destructive. add ! to be changed.
+
+#2.) Describe the difference between ! and ? in Ruby. And explain what would happen in the following scenarios: 
+#a. what is != and where should you use it?  = not equal to
+#b. put ! before something, like !user_name  =  not so sure
+#c. put ! after something, like words.uniq!  = destructive , mutates the object, comes with the method
+#d. put ? before something =  ternary operatory if.. else
+#e. put ? after something =  ask if its there  =  not so sure. comes with the method
+#f. put !! before something, like !!user_name  = not sure
+
+#3.) using .gsub
+
+#advice = "Few things in life are as important as house training your pet dinosaur."
+#p advice.gsub("important","urgent")
+
+#4.) 
+#numbers = [1, 2, 3, 4, 5]
+#p numbers.delete_at(1)
+#p numbers.delete(1)
+#Answer: 
+#delete_at(1) will delete the 2 integer, it is reading the place value of the given index
+#delete(1) will delete index 1, as it deletes whatever parameter it pass on
+
+#5.) p 42.between?(10,100)
+
+#6.) 
+#famous_words =  "Four score and " + "and seven years ago..."
+#p famous_words
+
+#7.) seriously.. Note: from tealeaf. The Kernel#eval method is a rarely used Ruby method.
+#You're not expected to understand how it works at this stage.
+#kinda get it it just evaluate the original value of the given variable if there is.
+#number is = 2, while add_eight = 8, because of the tricky gsub structure it is a bit
+#confusing bit doable. 
+
+#8.) .flatten!
+
+#9.)
+#flintstones = { "Fred" => 0, "Wilma" => 1, "Barney" => 2, "Betty" => 3, "BamBam" => 4, "Pebbles" => 5 }
+#p flintstones["Barney"]
+# === or
+#p flintstones.to_a[2]
+
+#10.) turn it into a hash using .each_with_index key is the name, value is placeholder/location
+
+flintstones = ["Fred", "Barney", "Wilma", "Betty", "Pebbles", "BamBam"]
+
+hash = {}
+
+flintstones.each_with_index { |name,idx|
+  hash[name] = idx }
+ 
+puts hash
+
