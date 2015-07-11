@@ -1,0 +1,64 @@
+#1 write program 10 times with new space on each
+#10.times {|space| puts (" " * space) + "The Flintstones Rock!" }
+# have to use encapsultaion, using brackets to execute the first if not given it gives me error mutliply to fixnum
+
+#2
+statement = "The Flintstones Rock"
+#my answer
+#p statement.scan(/\w/).inject(Hash.new(0)){|letter,count|
+#  letter[count] += 1; letter }
+
+#3 why does this give error? puts "the value of 40 + 2 is " + (40 + 2)
+#puts "the value of 40 + 2 is " + "#{40 + 2}"
+#puts "the value of 40 + 2 is " + (40 + 2).to_s
+
+
+#4 both of the called methods mutates the array and shift removes the beggining while pop at the end. even given the number it will be the same result 
+#returns the taken out value and prints the remaining elements
+
+#numbers = [1, 2, 3, 4]
+#p numbers.shift(1)
+#p numbers.pop(4)
+
+#5 dividend problem
+
+#while dividend > 0 do
+#  divisors << number / dividend if number % dividend == 0
+#  dividend -= 1
+#end
+
+#6 rolling buffer config.
+#the first config adds up everythime. while the 2nd one get the both actual amount and takes it.
+
+#7 fibonachi...
+#def fib(first_num, second_num)
+#  limit = 15
+#  while second_num < limit
+#    sum = first_num + second_num
+#    first_num = second_num
+#    second_num = sum
+#  end
+#  sum
+#end
+
+#result = fib(0, 1)
+#puts "result is #{result}"
+
+#8 titleize! my ruby does not support it.
+
+#9 age group 
+
+munsters = { 
+  "Herman" => { "age" => 32, "gender" => "male" }, 
+  "Lily" => { "age" => 30, "gender" => "female" }, 
+  "Grandpa" => { "age" => 402, "gender" => "male" }, 
+  "Eddie" => { "age" => 10, "gender" => "male" },
+  "Marilyn" => { "age" => 23, "gender" => "female"}
+}
+
+case munsters
+
+
+when munsters.inlcude?(18,64) then
+  munsters["age_group"] = "adult"
+end
