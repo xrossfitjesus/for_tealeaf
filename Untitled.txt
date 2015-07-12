@@ -1,22 +1,23 @@
 #Quiz 2
 
-# figured out the total age of male member of munsters hash
 
-
-#2
+#1 figured out the total age of male member of munsters hash
 
 munsters = { 
   "Herman" => { "age" => 32, "gender" => "male" }, 
   "Lily" => { "age" => 30, "gender" => "female" }, 
   "Grandpa" => { "age" => 402, "gender" => "male" }, 
-  "Eddie" => { "age" => 10, "gender" => "male" },
-  "Marilyn" => { "age" => 23, "gender" => "female"}
+  "Eddie" => { "age" => 10, "gender" => "male" } 
 }
 
+total = 0
+munsters.each {|k,v| total += v["age"] if v["gender"] == "male"}  
+puts total
 
 
+#2 print out each member individualy
 
 
-munsters.each_pair do |key,value|
-  puts "the name is #{key} the age is #{value["age"]} and is a #{value["gender"]}"
-  end
+#munsters.each_pair do |key,value|
+#puts "the name is #{key} the age is #{value["age"]} and is a #{value["gender"]}"
+#end
