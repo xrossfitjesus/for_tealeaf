@@ -1,0 +1,36 @@
+#1 nothing will happen since it is not called
+
+#2  greetings = { a: 'hi' }
+#informal_greeting = greetings[:a]
+#informal_greeting << ' there'
+
+#puts informal_greeting  #  => "hi there"
+#puts greetings
+
+#{:a => "hi there"}
+
+
+#3
+
+#A. one , two , three
+
+#B. one, two, three
+
+#C. two, three , one
+
+
+  def mess_with_vars(x, y, z)
+    @x= "two"
+    @y = "three"
+    z = "one"
+  end
+
+  x = 7
+  y = 5
+  z = "three"
+
+  mess_with_vars(x, y, z)
+
+  puts "one is: #{x}"
+  puts "two is: #{y}"
+  puts "three is: #{z}"
